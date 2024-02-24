@@ -28,7 +28,7 @@ jobs:
         run: pwd
         
       - name: workspace bul
-        run: echo $GITHUB_WORKSPACE
+        run: ls -la $GITHUB_WORKSPACE/web/target
 
       - name: Set build number
         id: set_build_number
