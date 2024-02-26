@@ -26,7 +26,7 @@ jobs:
 
       - name: Upload WAR to S3
         run: |
-          response=$(aws s3 cp $GITHUB_WORKSPACE/web/target/*.war s3://powercloud21/)
+          response=$(aws s3 cp $GITHUB_WORKSPACE/web/target/*.war s3://devops-123/)
           echo "AWS SDK Response: $response"
         env:
           AWS_DEFAULT_REGION: ap-south-1
@@ -93,7 +93,7 @@ jobs:
         
       - name: Upload WAR to S3
         run: |
-          aws s3 cp s3://powercloud21/Power-Cloud-1.war /tmp/
+          aws s3 cp s3://devops-123/Power-Cloud-1.war /tmp/
           echo "AWS SDK Response: $response"
         env:
           AWS_DEFAULT_REGION: ap-south-1
