@@ -42,7 +42,7 @@ jobs:
           aws s3 cp s3://powercloud21/time-tracker-web-0.5.0-SNAPSHOT.war /tmp/
           echo "AWS SDK Response: $response"
         env:
-          AWS_DEFAULT_REGION: ap-south-1
+          AWS_DEFAULT_REGION: us-east-1
       
       - name: Deploy WAR to Tomcat
         run: |
