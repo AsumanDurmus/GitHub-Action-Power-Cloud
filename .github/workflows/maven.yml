@@ -96,7 +96,7 @@ jobs:
           aws s3 cp s3://devops-123/Power-Cloud-1.war /tmp/
           echo "AWS SDK Response: $response"
         env:
-          AWS_DEFAULT_REGION: ap-south-1
+          AWS_DEFAULT_REGION: us-east-1
       
       - name: Deploy WAR to Tomcat
         run: |
